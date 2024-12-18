@@ -1,13 +1,9 @@
-$primary-color: #4caf50;
-$background-color: #f4f4f4;
-$error-color: #ff4d4d;
-
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: $background-color;
+  background-color: #f4f4f4;
 
   .login-card {
     background: #fff;
@@ -18,7 +14,7 @@ $error-color: #ff4d4d;
 
     h2 {
       margin-bottom: 1rem;
-      color: $primary-color;
+      color: #4caf50;
     }
 
     form {
@@ -34,12 +30,12 @@ $error-color: #ff4d4d;
 
         &:focus {
           outline: none;
-          border-color: $primary-color;
+          border-color: #4caf50;
         }
       }
 
       button {
-        background: $primary-color;
+        background: #4caf50;
         color: #fff;
         border: none;
         padding: 0.8rem;
@@ -49,12 +45,12 @@ $error-color: #ff4d4d;
         margin-top: 0.5rem;
 
         &:hover {
-          background: darken($primary-color, 10%);
+          background: darken(#4caf50, 10%);
         }
       }
 
       .error {
-        color: $error-color;
+        color: #ff4d4d;
         margin-top: 0.5rem;
         font-size: 0.9rem;
       }
