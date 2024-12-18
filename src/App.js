@@ -1,22 +1,18 @@
-import React from 'react'
-import { useState } from 'react'
-import "./assets/style/index.scss"
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./components/login";
+import Home from "./components/home";
 
 
-function Mycomponent() {
-      const [ Name, setName] = useState("Mirjalol");
-  
-  const updatename = () =>{
-    setName("Otaboy")
-  }
-    return (
-      <>
-      <div className='changed'>
-        <h1> My name:{Name} </h1>
-        <button onClick={updatename} >  Change name</button>
-      </div>
-    </>
-  )
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default Mycomponent
+export default App;

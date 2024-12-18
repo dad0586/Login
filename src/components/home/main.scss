@@ -1,0 +1,15 @@
+$primary-color: #4caf50;
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e8f5e9;
+  color: $primary-color;
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
